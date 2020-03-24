@@ -26,10 +26,16 @@ export class ListComponent implements OnInit {
     if (slug) {
       this.title = slug;
       const filtered = this.products.filter(p => p[slug]);
-      this.products = filtered[0][slug]
+      this.products = filtered.length > 0 ? filtered[0][slug] : [];
+      this.apiError = filtered.length === 0 ? 'No product found in' : null;
     }
     else {
-      this.products = [];
+      const filtered = [];
+      this.products.filter(p => {
+        Object.values(p).forEach(el =>  filtered.push(el) );
+      });
+
+      this.products = [].concat(...filtered);
     }
 
   }

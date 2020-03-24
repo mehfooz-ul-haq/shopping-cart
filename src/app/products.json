@@ -1,0 +1,42 @@
+[
+    {
+        "bread": [
+            {
+                "id": "1",
+                "slug": "spinch",
+                "name": "Spinch",
+                "price": "2.5",
+                "image": "spinch.jpg'"
+            },
+            {
+                "id": "2",
+                "slug": "freshly-baked-bread",
+                "name": "Freshly Baked Bread",
+                "price": "5.5",
+                "image": "freshly-baked-bread.jpg'"
+            }
+        ]
+    },
+    {
+        "dairy": [
+            {
+                "id": "3",
+                "slug": "dairy-product",
+                "name": "Dairy Product",
+                "price": "10.5",
+                "image": "dairy-product.jpg'"
+            }
+        ]
+    },
+    {
+        "seasoning-and-spices": [
+            {
+                "id": "4",
+                "slug": "seasoning-and-spices-product",
+                "name": "Seasoning And Spices Product",
+                "price": "10.5",
+                "image": "seasoning-and-spices.jpg'"
+            }
+        ]
+    }
+]

@@ -21,9 +21,9 @@
                     <button *ngIf="!findInCart(product.id)" (click)="addToCart(product)" class="btn btn-secondary">Add to Cart</button>
 
                     <div class="row" *ngIf="findInCart(product.id)">
-                        <div class="col-2"><button (click)="minusCart(product)" class="btn btn-secondary">-</button></div>
-                        <div class="col-7 pt-2">1 in cart</div>
-                        <div class="col-2"><button (click)="plusCart(product)" class="btn btn-secondary">+</button></div>
+                        <div class="col-2"><button (click)="minusCart(product.id)" class="btn btn-secondary">-</button></div>
+                        <div class="col-7 pt-2 text-center">{{ getQuantity(product.id) }} in cart</div>
+                        <div class="col-2"><button (click)="plusCart(product.id)" class="btn btn-secondary">+</button></div>
                     </div>
 
                 </div>

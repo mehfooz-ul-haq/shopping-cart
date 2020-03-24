@@ -7,10 +7,11 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Shopping Cart  <span class="badge badge-primary">{{ cartProductsCount }}</span></a>
+        <a class="nav-link"[routerLink]="['cart']" routerLinkActive="router-link-active" >Shopping Cart  <span class="badge badge-primary">{{ cartProductsCount }}</span></a>
+        
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Login</a>
+        <a class="nav-link" [routerLink]="['/']" routerLinkActive="router-link-active" >Login</a>
       </li>
     </ul>
   </div>
@@ -20,12 +21,12 @@
   <div class="row">
     <div class="col-3">
       <div class="list-group">
-        <a href="products" class="list-group-item list-group-item-action active">All Categories</a>
-        <a href="products/bread" class="list-group-item list-group-item-action">Bread</a>
-        <a href="products/dairy" class="list-group-item list-group-item-action">Dairy</a>
-        <a href="products/fruits" class="list-group-item list-group-item-action">Fruits</a>
-        <a href="products/seasoning-and-spices" class="list-group-item list-group-item-action">Seasoning and Spices</a>
-        <a href="products/vegetables" class="list-group-item list-group-item-action">Vegetables</a>
+        <a [routerLink]="['products']" routerLinkActive="router-link-active" class="list-group-item list-group-item-action active">All Categories</a>
+        <a [routerLink]="['products', 'bread']" routerLinkActive="router-link-active" class="list-group-item list-group-item-action">Bread</a>
+        <a [routerLink]="['products', 'dairy']" routerLinkActive="router-link-active" class="list-group-item list-group-item-action">Dairy</a>
+        <a [routerLink]="['products', 'fruits']" routerLinkActive="router-link-active" class="list-group-item list-group-item-action">Fruits</a>
+        <a [routerLink]="['products', 'seasoning-and-spices']" routerLinkActive="router-link-active" class="list-group-item list-group-item-action">Seasoning and Spices</a>
+        <a [routerLink]="['products', 'vegetables']" routerLinkActive="router-link-active" class="list-group-item list-group-item-action">Vegetables</a>
       </div>
     </div>
     <div class="col-9">
